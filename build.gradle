@@ -13,7 +13,7 @@ apply plugin: 'maven-publish'
 group = 'com.netas.jmeter'
 archivesBaseName = 'jmeter-gradle-plugin'
 
-ext.thisPluginVersion="1.0.0"
+ext.thisPluginVersion="1.0.1"
 ext.jmVersion = "2.13"
 ext.jmPluginVersion = "1.3.0"
 version = "$thisPluginVersion-$jmVersion"

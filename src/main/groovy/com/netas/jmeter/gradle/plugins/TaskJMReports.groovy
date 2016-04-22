@@ -145,10 +145,10 @@ public class TaskJMReports extends DefaultTask {
     private InputStream getXslt() throws IOException {
         if (project.jmeter.reportXslt == null) {
             //if we are using the default report, also copy the images out.
-            IOUtils.copy(Thread.currentThread().getContextClassLoader().getResourceAsStream("reports/collapse.jpg"), new FileOutputStream(reportDir.getPath() + File.separator + "collapse.jpg"));
-            IOUtils.copy(Thread.currentThread().getContextClassLoader().getResourceAsStream("reports/expand.jpg"), new FileOutputStream(reportDir.getPath() + File.separator + "expand.jpg"));
-            log.debug("Using reports/jmeter-results-detail-report_21.xsl for building report");
-            return Thread.currentThread().getContextClassLoader().getResourceAsStream("reports/jmeter-results-detail-report_21.xsl");
+            IOUtils.copy(Thread.currentThread().getContextClassLoader().getResourceAsStream("reports/collapse.png"), new FileOutputStream(reportDir.getPath() + File.separator + "collapse.png"));
+            IOUtils.copy(Thread.currentThread().getContextClassLoader().getResourceAsStream("reports/expand.png"), new FileOutputStream(reportDir.getPath() + File.separator + "expand.png"));
+            log.debug("Using reports/jmeter_report.xsl for building report");
+            return Thread.currentThread().getContextClassLoader().getResourceAsStream("reports/jmeter_report.xsl");
         } else {
             log.debug("Using " + project.jmeter.reportXslt + " for building report");
             return new FileInputStream(project.jmeter.reportXslt);
