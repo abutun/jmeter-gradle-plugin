@@ -1,4 +1,4 @@
-package net.foragerr.jmeter.gradle.plugins.utils
+package com.netas.jmeter.gradle.plugins.utils
 
 import groovy.util.logging.Slf4j
 import org.apache.tools.ant.DirectoryScanner

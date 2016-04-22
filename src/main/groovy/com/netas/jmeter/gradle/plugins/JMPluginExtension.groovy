@@ -1,4 +1,4 @@
-package net.foragerr.jmeter.gradle.plugins
+package com.netas.jmeter.gradle.plugins
 
 class JMPluginExtension {
 

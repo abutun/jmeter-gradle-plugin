@@ -1,8 +1,8 @@
-package net.foragerr.jmeter.gradle.plugins
+package com.netas.jmeter.gradle.plugins
 
-import net.foragerr.jmeter.gradle.plugins.utils.ErrorScanner
-import net.foragerr.jmeter.gradle.plugins.utils.JMUtils
-import net.foragerr.jmeter.gradle.plugins.worker.JMeterRunner
+import com.netas.jmeter.gradle.plugins.utils.ErrorScanner
+import com.netas.jmeter.gradle.plugins.utils.JMUtils
+import com.netas.jmeter.gradle.plugins.worker.JMeterRunner
 import org.gradle.api.DefaultTask
 import org.gradle.api.GradleException
 import org.gradle.api.logging.Logger

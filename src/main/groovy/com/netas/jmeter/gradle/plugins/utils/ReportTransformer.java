@@ -1,4 +1,4 @@
-package net.foragerr.jmeter.gradle.plugins.utils;
+package com.netas.jmeter.gradle.plugins.utils;
 
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;

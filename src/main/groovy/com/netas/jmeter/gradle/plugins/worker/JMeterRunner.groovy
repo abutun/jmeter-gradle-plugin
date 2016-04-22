@@ -1,6 +1,6 @@
-package net.foragerr.jmeter.gradle.plugins.worker
+package com.netas.jmeter.gradle.plugins.worker
 
-import net.foragerr.jmeter.gradle.plugins.JMSpecs
+import com.netas.jmeter.gradle.plugins.JMSpecs
 import org.gradle.api.GradleException
 import org.gradle.api.logging.Logger
 import org.gradle.api.logging.Logging

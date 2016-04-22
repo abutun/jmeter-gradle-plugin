@@ -1,4 +1,4 @@
-package net.foragerr.jmeter.gradle.plugins
+package com.netas.jmeter.gradle.plugins
 
 import groovy.util.logging.Log4j
 import org.apache.commons.io.IOUtils
@@ -22,8 +22,6 @@ class TaskJMInit extends DefaultTask {
 
     @TaskAction
     jmInit() {
-
-        project.jmeter.maxHeapSize = "512M"
         project.jmeter.reportPostfix = ""
 
         //Init plugin settings

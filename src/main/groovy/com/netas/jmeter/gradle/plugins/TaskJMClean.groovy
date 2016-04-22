@@ -1,4 +1,4 @@
-package net.foragerr.jmeter.gradle.plugins
+package com.netas.jmeter.gradle.plugins
 
 import org.gradle.api.DefaultTask
 import org.gradle.api.logging.Logger

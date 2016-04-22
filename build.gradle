@@ -10,13 +10,13 @@ apply plugin: 'maven-publish'
 
 
 //--- Project information ---
-group = 'net.foragerr.jmeter'
+group = 'com.netas.jmeter'
 archivesBaseName = 'jmeter-gradle-plugin'
 
-ext.thisPluginVersion="1.0.6"
+ext.thisPluginVersion="1.0.0"
 ext.jmVersion = "2.13"
 ext.jmPluginVersion = "1.3.0"
-version = "$thisPluginVersion-$jmVersion-SNAPSHOT"
+version = "$thisPluginVersion-$jmVersion"
 
 //--- Repositories ---
 repositories {
@@ -232,10 +232,10 @@ def pomConfig = {
 	}
 	developers {
 		developer {
-			id 'foragerr'
-			name 'RaGe'
-			url 'http://jmeter.foragerr.net'
-			email 'foragerr@gmail.com'
+			id 'netas'
+			name 'Netas'
+			url 'http://www.netas.com.tr'
+			email 'abutun@netas.com.tr'
 			roles { role 'Developer' }
 		}
 	}
@@ -293,7 +293,7 @@ bintray {
         userOrg = "$archivesBaseName" 
         licenses = ['Apache-2.0']
         publicDownloadNumbers = true
-        websiteUrl = 'http://jmeter.foragerr.net'
+        websiteUrl = 'http://www.netas.com.tr'
         issueTrackerUrl = 'https://github.com/jmeter-gradle-plugin/jmeter-gradle-plugin/issues'
         vcsUrl = 'https://github.com/jmeter-gradle-plugin/jmeter-gradle-plugin.git'
 
@@ -319,14 +319,14 @@ publishPlugins.onlyIf {
 	!(version ==~ /.*SNAPSHOT/)
 }
 pluginBundle {
-    website = 'http://jmeter.foragerr.net'
-    vcsUrl = 'https://github.com/jmeter-gradle-plugin/jmeter-gradle-plugin.git'
-    description = 'A Gradle plugin for running JMeter tests'
+    website = 'http://www.netas.com.tr'
+    vcsUrl = 'https://github.com/abutun/jmeter-gradle-plugin.git'
+    description = 'A Gradle plugin for running JMeter Tests'
     tags = ['jmeter', 'performance']
 
     plugins {
         jmeterPlugin {
-          id = 'net.foragerr.jmeter'
+          id = 'com.netas.jmeter'
           displayName = 'JMeter Gradle Plugin'
       }
     }

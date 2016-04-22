@@ -1,8 +1,8 @@
-package net.foragerr.jmeter.gradle.plugins
+package com.netas.jmeter.gradle.plugins
 
 import kg.apc.jmeter.PluginsCMDWorker
-import net.foragerr.jmeter.gradle.plugins.utils.JMUtils
-import net.foragerr.jmeter.gradle.plugins.utils.ReportTransformer
+import com.netas.jmeter.gradle.plugins.utils.JMUtils
+import com.netas.jmeter.gradle.plugins.utils.ReportTransformer
 import org.apache.commons.io.FilenameUtils
 import org.apache.commons.io.IOUtils
 import org.apache.jmeter.util.JMeterUtils
