@@ -137,7 +137,7 @@
 	<table width="100%">
 		<tr>
 			<td align="left">Generated at <xsl:value-of select="$dateReport" /></td>
-			<td align="right">By <a href="http://www.netas.com.tr">Netas jmeter-gradle-plugin</a>.</td>
+			<td align="right">By <a href="https://github.com/abutun/jmeter-gradle-plugin">Netas jmeter-gradle-plugin</a>.</td>
 		</tr>
 	</table>
 	<hr size="1" />
@@ -145,7 +145,7 @@
 
 <xsl:template name="summary">
 	<h2>Summary</h2>
-	<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+	<table class="details" border="1" cellpadding="5" cellspacing="0" bordercolor="#000000" width="95%" bgcolor="#F3E2A9">
 		<tr valign="top">
 			<th>Tests</th>
 			<th>Failures</th>
@@ -289,7 +289,7 @@
 			
                         <tr class="page_details">
                            <xsl:attribute name="id"><xsl:text/>page_details_<xsl:value-of select="position()" /></xsl:attribute>
-                           <td colspan="8" bgcolor="#FF0000">
+                           <td colspan="8" bgcolor="#A9D0F5">
                               <div align="center">
 			         <b>Details for Page "<xsl:value-of select="$label" />"</b>
 			         <table bordercolor="#000000" border="1"  cellpadding="0" cellspacing="0" width="95%">
