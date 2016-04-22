@@ -54,10 +54,24 @@ public class TaskJMReports extends DefaultTask {
 		
 		if (jmResultFiles.size()==0) log.warn("There are no results file to create reports from")
 		
-        if (project.jmeter.enableReports == true)makeHTMLReport(jmResultFiles)
+		if (project.jmeter.optimizeXmlFiles == true) optimizeXmlFiles(jmResultFiles);
+        if (project.jmeter.enableReports == true) makeHTMLReport(jmResultFiles)
         if (project.jmeter.enableExtendedReports == true) makeExtendedReports(jmResultFiles)
-		
     }
+	
+	private void optimizeXmlFiles(List<File> results) throws IOException {
+		for (File file : results) {
+			try {
+				String content = file.text;
+				
+				content = content.replaceAll('&', '&amp;');
+				
+				new File(file.absolutePath).write(content,'utf-8');
+			} catch (Throwable e) {
+				log.error("XML optimization failed for " + file, e);
+			}
+		}
+	}
 	
 	private void makeExtendedReports(List<File> results) throws IOException {
 		for (File resultFile : results) {

@@ -13,6 +13,7 @@ class JMPluginExtension {
     Boolean remote = false
     Boolean enableReports = null
     Boolean enableExtendedReports = null
+    Boolean optimizeXmlFiles = false
 
     List<File> jmTestFiles = null             //maps to -t, --testfile
     List<File> jmSystemPropertiesFiles = null //maps to -S, --systemPropertyFile
